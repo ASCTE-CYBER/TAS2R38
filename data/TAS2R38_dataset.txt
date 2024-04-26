@@ -22,7 +22,7 @@
 "01502"	"THIOT"	"tasting, henylthiocarbamide (bitter)"	"AD"	"171200"	""	""	""	"00006"	"2014-09-25 23:29:40"	"00006"	"2021-12-10 21:51:32"
 
 
-## Genes_To_Diseases ## Do not remove or alter this header ##
+## Genes_To_Disesaes ## Do not remove or alter this header ##
 ## Count = 1
 "{{geneid}}"	"{{diseaseid}}"
 "TAS2R38"	"01502"
