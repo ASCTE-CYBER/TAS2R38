@@ -1,0 +1,35 @@
+id,name,chromosome,chrom_band,imprinting,refseq_genomic,refseq_UD,reference,url_homepage,url_external,allow_download,id_hgnc,id_entrez,id_omim,show_hgmd,show_genecards,show_genetests,show_orphanet,note_index,note_listing,refseq,refseq_url,disclaimer,disclaimer_text,header,header_align,footer,footer_align,created_by,created_date,edited_by,edited_date,updated_by,updated_date
+T,A,S,2,R,3,8
+t,a,s,t,e, ,r,e,c,e,p,t,o,r,",", ,t,y,p,e, ,2,",", ,m,e,m,b,e,r, ,3,8
+7
+q,3,4
+n,o
+N,G,_,0,1,6,1,4,1,.,1
+U,D,_,1,3,2,1,1,8,9,8,8,9,8,7
+
+h,t,t,p,:,/,/,w,w,w,.,L,O,V,D,.,n,l,/,T,A,S,2,R,3,8
+
+1
+9,5,8,4
+5,7,2,6
+6,0,7,7,5,1
+1
+1
+1
+1
+E,s,t,a,b,l,i,s,h,m,e,n,t, ,o,f, ,t,h,i,s, ,g,e,n,e, ,v,a,r,i,a,n,t, ,d,a,t,a,b,a,s,e, ,(,L,S,D,B,), ,w,a,s, ,s,u,p,p,o,r,t,e,d, ,b,y, ,t,h,e, ,<,a, ,h,r,e,f,=,',h,t,t,p,:,/,/,w,w,w,.,L,U,M,C,.,n,l,', ,t,a,r,g,e,t,=,',_,b,l,a,n,k,',>,L,e,i,d,e,n, ,U,n,i,v,e,r,s,i,t,y, ,M,e,d,i,c,a,l, ,C,e,n,t,e,r, ,(,L,U,M,C,),<,/,a,>,",", ,L,e,i,d,e,n,",", ,N,e,d,e,r,l,a,n,d,.
+
+g
+h,t,t,p,:,/,/,d,a,t,a,b,a,s,e,s,.,l,o,v,d,.,n,l,/,s,h,a,r,e,d,/,r,e,f,s,e,q,/,T,A,S,2,R,3,8,_,c,o,d,i,n,g,D,N,A,.,h,t,m,l
+1
+
+
+-,1
+
+-,1
+0,0,0,0,1
+2,0,1,0,-,0,4,-,2,9, ,0,0,:,0,0,:,0,0
+0,0,0,0,6
+2,0,1,6,-,0,8,-,0,8, ,0,9,:,1,9,:,5,1
+0,0,0,0,6
+2,0,2,0,-,0,6,-,0,5, ,1,7,:,2,9,:,2,6
