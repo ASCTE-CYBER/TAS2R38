@@ -1,0 +1,2 @@
+id,geneid,name,id_mutalyzer,id_ncbi,id_ensembl,id_protein_ncbi,id_protein_ensembl,id_protein_uniprot,remarks,position_c_mrna_start,position_c_mrna_end,position_c_cds_end,position_g_mrna_start,position_g_mrna_end,created_by,created_date,edited_by,edited_date
+00020774,TAS2R38,taste receptor, type 2, member 38,001,NM_176817.4,,NP_789787.4,,,,-84,1059,1002,141673573,141672431,,0000-00-00 00:00:00
