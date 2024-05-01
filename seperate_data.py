@@ -1,7 +1,7 @@
-import csv
-import re
-from pathlib import Path
-from pprint import pprint
+# import csv
+# import re
+# from pathlib import Path
+# from pprint import pprint
 
 
 class Dataset:
@@ -17,51 +17,42 @@ class Dataset:
 
     def add_row(self, row):
         self.rows.append(row)
-        print(self.rows)
 
+    # Custom export to CSV
     def export_to_csv(self):
         with open(f'data/{self.name}.csv', 'w') as f:
-            f.write(''.join([f'{str(element)},' for element in self.column_definitions]).rstrip(',') + '\n')
+            f.write(''.join([f'{str(element)},' for element in self.column_definitions]).rstrip(','))
             for row in self.rows:
-                f.write(''.join([f'{str(element)},' for element in row]).rstrip(',') + '\n')
+                f.write('\n' + ''.join([f'{str(element)},' for element in row]).rstrip(','))
 
 
 def load_data(file_path):
-    data = []
+    data: Dataset = None
     with open(file_path, 'r') as f:
         lines = f.readlines()
         for line in lines:
             line = line.replace('\n', '')
-            print(line)
             if line.startswith('##') and line.endswith('header ##'):
-                # print(line.split('##')[1].strip())
-                dataset = Dataset(line.split('##')[1].strip())
-                data.append(dataset)
+                if data is not None:
+                    data.export_to_csv()
+                    print(f'exported {data.name}')
+
+                data = Dataset(line.split('##')[1].strip())
+                data.rows = []
+                data.column_definitions = []
             elif line.startswith('"{{'):
-                data[-1].set_column_definitions(line.replace('{', '').replace('}', '').replace('"', '').split('\t'))
+                data.set_column_definitions(line.replace('{', '').replace('}', '').replace('"', '').split('\t'))
                 # print(data[-1].column_definitions)
             elif line.startswith('#'):
-                # print(f'nondata line "{line}" ignored')
-                pass
+                print(f'nondata line "{line}" ignored')
             elif line.startswith('"'):
                 # print(line.replace('"', '').split('\t'))
-                data[-1].add_row(line.replace('"', '').split('\t'))
-                print(data[-1].name)
-                # print(data[-1].rows)
-
-    return data
+                data.add_row(line.replace('"', '').split('\t'))
+                # print(data.name)
 
 
 def main():
-    data = load_data('./TAS2R38_dataset.txt')
-
-    print(data[0].name)
-    print(data[1].name)
-    print(data[-1].name)
-
-    for dataset in data:
-        dataset.export_to_csv()
-    pprint(data)
+    load_data('./TAS2R38_dataset.txt')
 
 
 if __name__ == '__main__':
