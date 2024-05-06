@@ -164,3 +164,6 @@ tmp/
 temp/*
 *.code-workspace
 *.vscode/
+
+*.gsheet
+*.gdoc

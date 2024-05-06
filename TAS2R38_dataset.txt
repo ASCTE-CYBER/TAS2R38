@@ -837,7 +837,7 @@
 ## Count = 201
 "{{id}}"	"{{transcriptid}}"	"{{effectid}}"	"{{position_c_start}}"	"{{position_c_start_intron}}"	"{{position_c_end}}"	"{{position_c_end_intron}}"	"{{VariantOnTranscript/DNA}}"	"{{VariantOnTranscript/RNA}}"	"{{VariantOnTranscript/Protein}}"	"{{VariantOnTranscript/Exon}}"	"{{VariantOnTranscript/Haplotype}}"
 "0000127952"	"00020774"	"10"	"0"	"0"	"0"	"0"	"c.="	"r.="	"p.="	"1"	"AVI"
-"0000127953"	"00020774"	"70"	"145"	"0"	"145"	"0"	"c.145G>C"	"r.(?)"	"p.(Ala49Pro)"	"1"	"PAV"
+"0000127953"	"00020774"	"70"	" "	"0"	"145"	"0"	"c.145G>C"	"r.(?)"	"p.(Ala49Pro)"	"1"	"PAV"
 "0000127954"	"00020774"	"70"	"785"	"0"	"785"	"0"	"c.785T>C"	"r.(?)"	"p.(Val262Ala)"	"1"	"AAV"
 "0000127955"	"00020774"	"70"	"145"	"0"	"145"	"0"	"c.145G>C"	"r.(?)"	"p.(Ala49Pro)"	"1"	"PAV"
 "0000127956"	"00020774"	"10"	"0"	"0"	"0"	"0"	"c.="	"r.="	"p.="	"1"	"AVI"
